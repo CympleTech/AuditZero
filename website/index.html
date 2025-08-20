@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuditZero - Auditable zkPayments Across Chains</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">AuditZero</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#use-cases">Use Cases</a>
+                <a href="#technology">Technology</a>
+                <a href="#demo">Demo</a>
+            </div>
+            <div class="nav-cta">
+                <button class="btn-secondary">Read Whitepaper</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Auditable zkPayments Across Chains</h1>
+                <p class="hero-subtitle">Seamless, privacy-preserving payments with optional auditability. Built on ZK proofs, supporting both secp256k1 and ed25519 signature systems.</p>
+                <div class="hero-cta">
+                    <button class="btn-primary">Launch Demo</button>
+                    <button class="btn-secondary">Read Whitepaper</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="crypto-pattern">
+                    <div class="chain-link"></div>
+                    <div class="chain-link"></div>
+                    <div class="chain-link"></div>
+                    <div class="merkle-tree">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Private Yet Auditable Payments Matter</h2>
+            </div>
+            <div class="problem-solution-grid">
+                <div class="problem-card">
+                    <h3>The Problem</h3>
+                    <ul>
+                        <li>Traditional payments lack privacy protection</li>
+                        <li>Existing privacy solutions aren't auditable</li>
+                        <li>Cross-chain transfers are complex and expensive</li>
+                        <li>Regulatory compliance is challenging with privacy</li>
+                    </ul>
+                </div>
+                <div class="solution-card">
+                    <h3>Our Solution</h3>
+                    <ul>
+                        <li>Zero-knowledge proofs ensure transaction privacy</li>
+                        <li>Dual-memo system enables selective auditability</li>
+                        <li>Native cross-chain support with unified interface</li>
+                        <li>Compliance-ready for institutional adoption</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>A seamless flow from private payment to optional audit verification</p>
+            </div>
+            <div class="workflow-diagram">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <h3>Create Payment</h3>
+                    <p>Generate ZK proof hiding amount, sender, and receiver</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <h3>Dual Memos</h3>
+                    <p>One memo for receiver, one encrypted for auditor</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <h3>Cross-Chain</h3>
+                    <p>Execute on any supported blockchain</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <h3>Audit Ready</h3>
+                    <p>Authorized auditors can verify when needed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Features</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Zero-Knowledge Privacy</h3>
+                    <p>Hide amounts, sender, and receiver while ensuring transaction validity through cryptographic proofs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Auditable Memos</h3>
+                    <p>Dual-memo system—one for the receiver, one encrypted for the auditor when compliance is required.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Cross-Chain Support</h3>
+                    <p>Works seamlessly across EVM chains, Solana, and Move-based blockchains with unified interface.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3>Multi-Signature Compatibility</h3>
+                    <p>Supports Ethereum secp256k1 addresses and Solana/Move ed25519 accounts natively.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Stablecoin & Payroll Ready</h3>
+                    <p>Ideal for stablecoin transfers, salary payments, and institutional payouts at scale.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>PLONK Efficiency</h3>
+                    <p>Smaller proofs, faster verification, and cheaper on-chain validation than traditional zkSNARKs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2>Use Cases</h2>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <h3>Stablecoin Transfers</h3>
+                    <p>Private USDC/USDT transfers with optional regulatory oversight</p>
+                    <div class="chain-logos">
+                        <span class="chain-logo">ETH</span>
+                        <span class="chain-logo">SOL</span>
+                        <span class="chain-logo">MATIC</span>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <h3>Payroll Payments</h3>
+                    <p>Private salary distributions with audit trails for compliance</p>
+                    <div class="chain-logos">
+                        <span class="chain-logo">ETH</span>
+                        <span class="chain-logo">AVAX</span>
+                        <span class="chain-logo">APT</span>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <h3>B2B Cross-Border Settlement</h3>
+                    <p>International business payments with privacy and auditability</p>
+                    <div class="chain-logos">
+                        <span class="chain-logo">SOL</span>
+                        <span class="chain-logo">SUI</span>
+                        <span class="chain-logo">ARB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technology</h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>PLONK zkSNARKs</h3>
+                    <p>Universal setup, smaller proofs, faster verification compared to Groth16</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Signature Systems</h3>
+                    <p>Native support for secp256k1 (Ethereum) and ed25519 (Solana/Move)</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Cross-Chain Protocol</h3>
+                    <p>Unified interface across EVM, Solana VM, and Move runtime</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Encryption Schemes</h3>
+                    <p>Advanced cryptographic methods for selective disclosure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo & Docs -->
+    <section id="demo" class="demo-docs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Demo & Documentation</h2>
+            </div>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <h3>Live Testnet</h3>
+                    <p>Try AuditZero on our testnet environment</p>
+                    <button class="btn-primary">Launch Demo</button>
+                </div>
+                <div class="demo-card">
+                    <h3>GitHub Repository</h3>
+                    <p>Explore the open-source implementation</p>
+                    <button class="btn-secondary">View Code</button>
+                </div>
+                <div class="demo-card">
+                    <h3>Technical Whitepaper</h3>
+                    <p>Deep dive into the cryptographic foundations</p>
+                    <button class="btn-secondary">Read Paper</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community & Partners -->
+    <section class="community">
+        <div class="container">
+            <div class="section-header">
+                <h2>Community & Partners</h2>
+            </div>
+            <div class="community-grid">
+                <div class="community-card">
+                    <h3>Join Our Community</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Discord</a>
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="https://x.com/cympletech" class="social-link" target="_blank">Twitter</a>
+                    </div>
+                </div>
+                <div class="community-card">
+                    <h3>Early Adopters</h3>
+                    <p>Join leading institutions pioneering private cross-chain payments</p>
+                    <button class="btn-secondary">Partner With Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AuditZero</h3>
+                    <p>Auditable zkPayments Across Chains</p>
+                    <p>Built by <a href="https://cympletech.com" target="_blank" style="color: var(--neon-green); text-decoration: none;">CympleTech</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#use-cases">Use Cases</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#">Whitepaper</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="contact-links">
+                        <a href="mailto:hi@cympletech.com" style="color: var(--white); text-decoration: none; display: block; margin-bottom: 0.5rem;">📧 hi@cympletech.com</a>
+                        <a href="https://x.com/cympletech" target="_blank" style="color: var(--white); text-decoration: none; display: block; margin-bottom: 0.5rem;">🐦 @cympletech</a>
+                        <a href="https://cympletech.com" target="_blank" style="color: var(--white); text-decoration: none; display: block;">🌐 cympletech.com</a>
+                    </div>
+                    <div class="newsletter" style="margin-top: 1.5rem;">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AuditZero by <a href="https://cympletech.com" target="_blank" style="color: var(--neon-green); text-decoration: none;">CympleTech</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
